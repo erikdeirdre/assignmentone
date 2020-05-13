@@ -2,7 +2,7 @@ name: merge
 
 on:
   pull_request:
-    types: [closed]
+    types: [opened, closed, edited]
 
 jobs:
   build:
@@ -20,3 +20,5 @@ jobs:
     - name: Echo something
       run: |
         echo $GITHUB_REF
+        echo $GITHUB_WORKSPACE
+        echo $GITHUB_EVENT_NAME
