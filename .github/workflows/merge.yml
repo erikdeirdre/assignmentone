@@ -2,7 +2,7 @@ name: merge
 
 on:
   pull_request:
-    types: [closed, edited]
+    types: [opened, closed, edited]
 
 jobs:
   build:
