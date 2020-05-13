@@ -21,3 +21,4 @@ jobs:
       run: |
         echo $GITHUB_REF
         echo $GITHUB_WORKSPACE
+        echo $GITHUB_EVENT_NAME
