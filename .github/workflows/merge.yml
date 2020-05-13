@@ -2,7 +2,7 @@ name: merge
 
 on:
   pull_request:
-    types: [closed]
+    types: [closed, edited]
 
 jobs:
   build:
@@ -20,3 +20,4 @@ jobs:
     - name: Echo something
       run: |
         echo $GITHUB_REF
+        echo $GITHUB_WORKSPACE
